@@ -1,0 +1,17 @@
+<header id="header" class="fixed top-0 w-full px-6 py-5 transition-all duration-500 ease-in-out transform bg-white shadow-md z-100">
+    <div class="flex flex-wrap items-center justify-between max-w-5xl mx-auto">
+        <div class="sm:mr-8">
+            <a class="flex items-center" href="{{ '/' | url }}">
+                <span class="self-center text-xl font-semibold text-teal-700">{{ site.title }}</span>
+            </a>
+        </div>
+        <nav id="menu" class="items-center flex-grow order-last hidden w-full mt-2 md:order-none md:w-auto md:flex md:mt-0">
+            {% for item in menu %}
+            <a href="{{ item.url | url }}" {% if item.newTab %}target="_blank" rel="noopener" {% endif %}class="block mt-4 mr-4 text-base font-medium md:inline-block md:mt-0 text-slate-700 hover:text-teal-600">{% if item.icon %}{% include 'icons/' + item.icon  %}{% endif %}{{ item.label | safe }}</a>
+            {% endfor %}
+        </nav>
+        <div id="menu-toggle" class="flex items-center cursor-pointer md:hidden text-slate-700 hover:text-teal-600 sm:ml-6">
+            {% include "icons/menu.svg" %}
+        </div>
+    </div>
+</header>

@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-min: 1rem; /* 16px */
+  --font-max: 1.5rem; /* 24px - reduced max to limit large sizes */
+  --font-clamp-scale-p: 1; /* Adjust this specifically for paragraphs */
+  --font-clamp-scale-headings: 1.1; /* For headings - separate control */
+}
+
+@layer base {
+  body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, helvetica,
+      Arial, sans-serif;
+  }
+  p {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-p) * 1rem + 0.2vw),
+      var(--font-max)
+    );
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-headings) * 2.5rem + 1vw),
+      var(--font-max)
+    );
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-headings) * 2rem + 0.75vw),
+      var(--font-max)
+    );
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-headings) * 1.75rem + 0.5vw),
+      var(--font-max)
+    );
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-headings) * 1.5rem + 0.25vw),
+      var(--font-max)
+    );
+    line-height: 1.5;
+  }
+
+  h5 {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-headings) * 1.25rem + 0.2vw),
+      var(--font-max)
+    );
+    line-height: 1.6;
+  }
+
+  h6 {
+    font-size: clamp(
+      var(--font-min),
+      calc(var(--font-clamp-scale-headings) * 1rem + 0.1vw),
+      var(--font-max)
+    );
+    line-height: 1.7;
+  }
+}
+
+svg {
+  width: 40px;
+}

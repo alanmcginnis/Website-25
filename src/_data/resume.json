@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "intro": "Experienced technology professional with 10+ years of hands-on experience improving websites, user experiences, and team collaboration. Strong background in practical problem-solving and technical implementation, consistently delivering results that help businesses grow. Successfully managed large-scale website projects, developed effective optimization plans, and built strong working relationships between technical teams and business stakeholders."
+  },
+  "experiences": {
+    "0": {
+      "jobTitle": "Sr. Technology Enablement Consultant",
+      "company": "Roboboogie",
+      "companyDates": "Mar. 2022 - Nov. 2024",
+      "overview": [
+        "Directed enterprise-wide digital transformation strategies that directly impacted revenue growth through innovative customer success frameworks",
+        "Established company-wide best practices for platform optimization that became the standard for future client implementations",
+        "Led strategic partnership initiatives with key enterprise accounts, resulting in expanded service adoption and increased customer lifetime value",
+        "Developed data-driven optimization methodologies that became core to the company's service offering and client success metrics",
+        "Built and scaled the consulting practice through mentorship, process standardization, and strategic resource allocation",
+        "Influenced product roadmap and go-to-market strategy through deep client insights and market analysis"
+      ]
+    },
+    "1": {
+      "jobTitle": "Digital Experience Technology Consultant",
+      "company": "Roboboogie",
+      "companyDates": "Apr. 2021 - Mar. 2022",
+      "overview": [
+        "Designed and implemented foundational client onboarding programs for digital experience platform adoption",
+        "Conducted technical discovery sessions to create detailed implementation roadmaps aligned with client capabilities and resources",
+        "Developed technical documentation and training materials that streamlined the knowledge transfer process",
+        "Coordinated cross-functional team collaboration between client stakeholders to ensure successful platform integration",
+        "Created repeatable implementation frameworks that reduced technical barriers to adoption",
+        "Identified and resolved common platform integration challenges, establishing solutions for future implementations"
+      ]
+    },
+    "2": {
+      "jobTitle": "Development Team Lead",
+      "company": "Gravitate",
+      "companyDates": "Feb. 2019 - Apr. 2021",
+      "overview": [
+        "Directed cross-functional development teams in delivering high-value enterprise projects, consistently meeting deadlines and exceeding client expectations",
+        "Orchestrated support and hosting operations for enterprise client websites, maintaining exceptional uptime and strong client retention",
+        "Transformed project delivery through Agile methodology implementation, resulting in enhanced efficiency and reduced defect rates",
+        "Cultivated a high-performance team culture through structured improvement processes and solution-oriented leadership",
+        "Engineered custom content management solutions that streamlined client operations and improved content workflow efficiency",
+        "Delivered optimized e-commerce solutions that enhanced user experience and drove conversion improvements",
+        "Developed secure, high-performance API integrations that enabled seamless third-party system connectivity"
+      ]
+    },
+    "3": {
+      "jobTitle": "Full Stack Web Developer",
+      "company": "Gravitate",
+      "companyDates": "Feb. 2018 - Feb. 2019",
+      "overview": [
+        "Designed and implemented responsive web solutions using modern frameworks, delivering exceptional user experiences across all devices",
+        "Collaborated with UX teams to create intuitive interfaces while maintaining robust, scalable backend architectures",
+        "Engineered custom API integrations and middleware solutions that successfully unified client systems with external services",
+        "Developed comprehensive technical specifications that directly contributed to successful project acquisitions",
+        "Established and led developer mentorship programs focusing on full-stack development best practices and coding standards"
+      ]      
+    }
+  },
+  "skills_section": {
+    "icon": "skills-proficiency",
+    "sectionTitle": "Skills_Proficiency",
+    "skills_list": {
+      "0": "HTML5",
+      "1": "CSS3",
+      "2": "PHP",
+      "3": "Sass",
+      "4": "HUGO",
+      "5": "JavaScript",
+      "6": "WordPress",
+      "7": "CSS Grid/Flexbox",
+      "8": "Git",
+      "9": "AWS",
+      "10": "Yea Boi"
+    }
+  }
+}

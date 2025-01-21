@@ -1,0 +1,93 @@
+<!-- Navigation -->
+<nav
+      class="fixed top-0 z-50 w-full border-b bg-slate-700/80 backdrop-blur-sm border-slate-700">
+    <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+            <a
+            href="#"
+            class="text-xl font-bold"
+            >AM</a
+          >
+
+            <button
+            class="md:hidden"
+            type="button"
+            data-target="#mobile-menu"
+            aria-label="Toggle mobile menu"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+                    <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+            </button>
+
+            <div class="hidden space-x-6 md:flex">
+                <!-- Desktop Menu -->
+                <a
+              href="#about"
+              class="transition-colors hover:text-indigo-600"
+              >About</a
+            >
+                <a
+              href="#experience"
+              class="transition-colors hover:text-indigo-600"
+              >Experience</a
+            >
+                <a
+              href="#expertise"
+              class="transition-colors hover:text-indigo-600"
+              >Expertise</a
+            >
+                <a
+              href="#contact"
+              class="transition-colors hover:text-indigo-600"
+              >Contact</a
+            >
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+            id="mobile-menu"
+            class="absolute left-0 z-40 hidden w-full bg-white shadow-lg md:hidden top-16">
+                <ul class="py-4">
+                    <li>
+                        <a
+                  href="#about"
+                  class="block px-6 py-2 hover:bg-gray-100"
+                  >About</a
+                >
+                    </li>
+                    <li>
+                        <a
+                  href="#experience"
+                  class="block px-6 py-2 hover:bg-gray-100"
+                  >Experience</a
+                >
+                    </li>
+                    <li>
+                        <a
+                  href="#expertise"
+                  class="block px-6 py-2 hover:bg-gray-100"
+                  >Expertise</a
+                >
+                    </li>
+                    <li>
+                        <a
+                  href="#contact"
+                  class="block px-6 py-2 hover:bg-gray-100"
+                  >Contact</a
+                >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

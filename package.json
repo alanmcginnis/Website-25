@@ -1,0 +1,47 @@
+{
+  "name": "francisjosephmcginnis",
+  "description": "A website dedicated to Francis Joseph McGinnis",
+  "scripts": {
+    "start": "npm run clean && npm run serve:dev",
+    "clean": "rimraf dist",
+    "watch": "concurrently -c auto npm:css:watch npm:11ty:watch",
+    "serve:dev": "concurrently -c auto npm:css:watch npm:11ty:serve",
+    "serve:prod": "cross-env NODE_ENV=production eleventy --serve",
+    "build": "npm run css:build && npm run 11ty:build",
+    "debug": "cross-env DEBUG=Eleventy* npm run build",
+    "11ty:watch": "cross-env NODE_ENV=development eleventy --watch --incremental",
+    "11ty:serve": "cross-env NODE_ENV=development eleventy --serve --incremental",
+    "11ty:serve-prod": "cross-env NODE_ENV=production eleventy --serve",
+    "11ty:build": "npm run clean && cross-env NODE_ENV=production eleventy",
+    "css:watch": "tailwindcss -i src/assets/css/styles.css -o src/assets/css/main.css -w",
+    "css:build": "tailwindcss -i src/assets/css/main.css -o dist/assets/css/main.css -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daflh/vredeburg.git"
+  },
+  "author": "Alan McGinnis",
+  "license": "MIT",
+  "homepage": "http://192.168.68.52:8081/",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@vectopus/atlas-icons": "^0.0.7",
+    "html-minifier": "^4.0.0",
+    "minimist": "^1.2.8",
+    "rimraf": "^5.0.7",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.2.4",
+    "terser": "^5.16.1"
+  },
+  "version": "1.0.0",
+  "main": "eleventy.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Dad's Log",
+    "icon" : "memo.svg",
+    "url": "/dads-log"
+  },
+  {
+    "label": "Galleries",
+    "icon" : "camera.svg",
+    "url": "/galleries"
+  },
+  {
+    "label": "New Post",
+    "icon" : "upload.svg",
+    "url": "/form"
+  }
+]

@@ -1,0 +1,27 @@
+<!-- Experience Section -->
+<section
+  id="experience"
+  data-gtm-section-view="Experience"
+  class="py-20 bg-slate-900">
+  <div class="px-6 mx-auto max-w-7xl lg:px-8">
+    <div class="flex items-start">
+      {% include "icons/experience.svg" %}
+      <h2 class="pl-2 mb-8 text-3xl font-bold text-sky-400">Experience</h2>
+    </div>
+
+    <div class="space-y-8">
+      {% for key, experience in resume.experiences %}
+        <div class="p-4 p-6 font-light leading-relaxed text-gray-200 rounded-lg shadow bg-slate-800">
+          <h1 class="mb-4 font-extrabold text-sky-500">{{ experience.jobTitle }}</h1>
+        </h3>
+        <p class="mb-4">{{ experience.company }}<span class="text-gray-200/70"> | {{ experience.companyDates }}</span></p>
+        <ul class="mb-2 list-disc list-inside">
+          {% for item in experience.overview %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
