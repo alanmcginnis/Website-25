@@ -29,6 +29,7 @@
     "cross-env": "^7.0.3"
   },
   "devDependencies": {
+    "@11ty/eleventy-cache-assets": "^2.3.0",
     "@tailwindcss/typography": "^0.5.9",
     "@vectopus/atlas-icons": "^0.0.7",
     "html-minifier": "^4.0.0",
