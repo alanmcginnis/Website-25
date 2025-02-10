@@ -2,7 +2,7 @@
 
 deploy:
 	docker build --no-cache -t portfolio:latest . && \
-	docker run -dit --name ajm -p 8081:80 portfolio:latest
+	docker run -dit --name ajm -p 5665:80 portfolio:latest
 
 clean:
 	docker stop ajm && \
